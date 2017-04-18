@@ -23,10 +23,10 @@ public class StringManipulation {
             // Get a word from the user
             System.out.println("Please enter a word in lowercase.");
             String word = input.nextLine();
-            
+
             //convert word to lowercase
             word = word.toLowerCase();
-            if(word.equals("end")){
+            if (word.equals("end")) {
                 break;
             }
             int length = word.length();
