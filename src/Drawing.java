@@ -57,7 +57,7 @@ public class Drawing extends JComponent {
         g.fillPolygon(xPoints, yPoints, 3);
         // Draw Pac man
         g.setColor(Color.yellow);
-        g.fillArc(pacmanX, 525, 75, 75, 45, 270);
+        g.fillArc(pacmanX, 525, 75, 75, 45 - pacmanX, 270 - pacmanX);
         // GAME DRAWING ENDS HERE
     }
 
@@ -88,7 +88,7 @@ public class Drawing extends JComponent {
             // GAME LOGIC STARTS HERE 
 
             if (pacmanX <= 0) {
-                pacmanDirection = 1;
+                pacmanDirection = 1 * 20;
             }
 
             if (pacmanX >= WIDTH - 75) {
